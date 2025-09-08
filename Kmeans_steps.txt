@@ -1,0 +1,24 @@
+General steps to be done when applying Kmeans clustering technique:
+- Data Preparation
+    Collect relevant variables.
+    Clean missing values, duplicates, outliers (since K-Means is sensitive to them).
+    ...
+- Feature Engineering
+    K-Means uses Euclidean distance, so scale matters.
+    Apply standardization (Z-score) or min–max normalization, depending on data.
+- Choose the Number of Clusters (k)
+    K is not known in advance — you need to test.
+    Common methods:
+        Elbow Method 
+        Silhouette Score 
+        Gap Statistic
+
+- Run the K-Means Algorithm
+    Initialize centroids (random or k-means++).
+    Assign points to nearest centroid (cluster membership).
+    Update centroids as mean of assigned points.
+    Repeat until convergence (no big centroid changes).
+
+- Evaluate the Results
+
+- Interpret the Clusters
